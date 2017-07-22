@@ -8,7 +8,7 @@
   "scripts": {
     "build": "webpack",
     "test": "jest",
-    "dev": "node-modules/.bin/babel js/ -d js-babel/ && node_modules/.bin/babel server.js -o server-babel.js && node server-babel.js"
+    "server-build": "node_modules/.bin/babel js/ -d js-babel/ && node_modules/.bin/babel server.js -o server-babel.js && node server-babel.js"
   },
   "dependencies": {
     "axios": "^0.16.2",
@@ -46,6 +46,7 @@
     "jsdom": "^11.1.0",
     "json-loader": "^0.5.4",
     "mocha": "^3.4.2",
+    "node-ensure": "^0.0.0",
     "nyc": "^11.0.3",
     "prop-types": "^15.5.10",
     "react-addons-test-utils": "^15.6.0",

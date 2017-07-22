@@ -4,7 +4,11 @@ module.exports = {
   entry: './js/BrowserEntry.js',
   output: {
     filename: 'bundle.js',
-    path: join(__dirname, 'public')
+    path: join(__dirname, 'public'),
+    publicPath: '/public/'
+  },
+  stats: {
+    chunks: true
   },
   module: {
     rules: [

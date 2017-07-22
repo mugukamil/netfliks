@@ -24,6 +24,10 @@ var _Header2 = _interopRequireDefault(_Header);
 
 var _Store = require('./Store');
 
+var _axios = require('axios');
+
+var _axios2 = _interopRequireDefault(_axios);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -79,7 +83,7 @@ var Details = function (_Component) {
                         year,
                         ')'
                     ),
-                    _react2.default.createElement('img', { src: 'public/img/posters/' + poster, alt: '', className: 'video-poster' }),
+                    _react2.default.createElement('img', { src: '/public/img/posters/' + poster, alt: '', className: 'video-poster' }),
                     _react2.default.createElement(
                         'p',
                         { className: 'video-description' },
